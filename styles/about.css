@@ -1,0 +1,404 @@
+/*title*/
+.title{
+    position: absolute;
+    top: 1%;
+    right: 72%;
+    width: 300px;
+}
+.title p{
+    font-size: 30px;
+    font-weight: 900;
+    -webkit-box-reflect: below -30px linear-gradient(transparent, #fff);
+    animation: animate1 5s normal infinite;
+}
+@keyframes animate1 {
+    100%{
+        color: #0a9c81;
+        text-shadow: none;
+    }
+    0%{
+        color: #eabbd8;
+        text-shadow: 0 0 10px #0a9c81,
+        0 0 20px #0a9c81,
+        0 0 40px #0a9c81,
+        0 0 80px #0a9c81,
+        0 0 160px #0a9c81;
+    }
+}
+
+/*navbar*/
+
+.main-header .bg-video{
+    position: relative;
+    z-index: -1;
+    right: 0;
+    width: 100%;
+}
+.main-header .navbar{
+    width: 100%;
+    height: 60px;
+    margin: 5% auto;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+}
+.social_icons{
+    display: flex;
+    gap: 20px;
+    left: -10%;
+}
+.social_icons img{
+    width: 30px;
+    height: 30px;
+}
+.social_icons .telephone{
+    padding: 3px;
+    border-radius: 100px;
+    background-color: #fff;
+}
+.navbar .links{
+    display: flex;
+    gap: 2em;
+    position: relative;
+    left: 35%;
+}
+.navbar .links li{
+    list-style: none;
+}
+.navbar .links li a{
+    color: #fff;
+}
+.navbar .links li a:hover{
+    text-decoration: none;
+    background-color: #0a9c81;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    transition: 1s ease;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+}
+.navbar .login-btn{
+    background-color: #eabbd8;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 1s ease;
+}
+.navbar .login-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.navbar .login-btn:active{
+    scale: 0.95;
+}
+.navbar .toggle-btn{
+    color: #eabbd8;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+.text1{
+    position: absolute;
+    top: 25%;
+}
+.logo img{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    left: 60%;
+}
+.text1 .span{
+    color: #fff;
+    position: relative;
+    display: grid;
+    left: 65%;
+    width: 80%;
+    font-size: 40px;
+    font-family: font1;
+}
+@font-face {
+    font-family: font1;
+    src: url(../fonts/SGKara-SemiBold.ttf);
+}
+.span .solmap{
+    position: relative;
+    left: 5%;
+    font-size: 20px;
+}
+/*Dropdown menu*/
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 160px;
+    width: 300px;
+    height: 0;
+    background: rgba(34, 33, 33, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;  
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+}
+.dropdown-menu.open{
+    height: 300px;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-shadow: 0 0 1px black;
+}
+.dropdown-menu a:hover{
+    text-decoration: underline;
+    background-color: #0a9c81;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    transition: 1s ease;
+}
+.dropdown-menu .login-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0a9c81;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.dropdown-menu .login-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.dropdown-menu .login-btn:active{
+    scale: 0.95;
+}
+.dropdown-menu li{
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* About us */
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+.about .content .text2{
+    position: relative;
+    width: 550px;
+    max-width: 100%;
+}
+.top_title{
+    display: flex;    
+    gap: 5px;
+    position: relative;
+    left: 40%;
+    font-size: 30px;
+} 
+.top_title .top_solma{
+    color: #0a9c81;
+}
+.about .content .text2 p{
+    position: relative;
+    display: block;
+    top: 40px;
+    font-size: 1em;
+    border-right: 0px;
+    margin-right: 20px;
+    text-align: right;
+    justify-content: right;
+    color: #000;
+    transition: 1s;
+    text-shadow: 0 0 1px black;
+    text-align: justify;
+    direction: rtl;
+}
+
+.about .content img{
+    height: 500px;
+    width: 400px;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.about .content img:hover{
+    border: 2px solid var(--secondary);
+    transform: scale(1.05);
+    box-shadow: none;
+}
+/*responsive design for mobile*/
+@media(max-width: 481px){
+    /*navbar*/
+    .main-header .navbar{
+        margin-top: 20%;
+    }
+    .login_media{
+        height: 50px;
+        position: relative;
+        top: 60px;
+    }
+    .social_icons{
+        display: flex;
+        gap: 10px;
+    }
+    .social_icons img{
+        width: 20px;
+        height: 20px;
+    }
+    .navbar .links,
+    .navbar .login-btn{
+        display: none
+    }
+    .text1{
+        position: relative;
+        top: 10%;
+        width: 90%;
+    }
+    .text1 .logo{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 50%;
+        width: 100%;
+    }
+    .text1 .span{
+        color: #000;
+        position: relative;
+        width: 100%;
+    }
+    .span .solma{
+        font-size: 25px ;
+        position: relative;
+        right: 40%;
+    }
+    .span .solmap{
+        font-size: 15px ;
+        position: relative;
+        left: -40%;
+    }
+    /*Dropdown menu*/
+    .navbar .toggle-btn{
+        display: block;
+        position: relative;
+        top:  50px;
+        left:  90%;
+    }
+    .dropdown-menu{
+        display: block;
+        z-index: 4;
+        margin-right: -5%;
+        margin-top: -2%;
+    }
+    /*About us*/
+    .content{
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        top: 300px;
+        width: 90%;
+    }
+    
+    .about .content img{
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        width: 300px;
+        height: 400px;
+        position: relative;
+        left: 0%;
+        top: -50px;
+    }
+    .top_title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        position: relative;
+        top: -60%;
+        width: 90%;
+        left: 5%;
+    }
+    
+    .content .explain{
+        width: 90%;
+        font-size: 10px;
+        position: relative;
+        top: -60%;
+        left: 5%;
+    }
+    .about .content .text2{
+        display: grid;
+        width: 100%;
+    }
+}
+/*scrolling page*/
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition:  all 2s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.hidden1{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition:  all 2s;
+}
+.show1{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media(prefers-reduce-motion){
+  .hidden{
+    transition: none;
+  }
+ .hidden1{
+    transition: none;
+ }
+}
+
+body{
+  overflow-x: hidden;
+}

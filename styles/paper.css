@@ -1,0 +1,325 @@
+/*navbar*/
+.main-header .navbar{
+    width: 70%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 5% auto;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.login_media{
+    display: flex;
+    gap: 40px;
+    margin-left: -20%;
+}
+.social_icons{
+    display: flex;
+    gap: 20px;
+    left: -10%;
+}
+.social_icons img{
+    width: 30px;
+    height: 30px;
+}
+.navbar .links{
+    display: flex;
+    gap: 2em;
+    position: relative;
+    left: 30%;
+}
+.navbar .links li{
+    list-style: none;
+}
+.navbar .links li a:hover{
+    text-decoration: none;
+    background-color: #0a9c81;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    transition: 1s ease;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+}
+.navbar .login-btn{
+    background-color: #eabbd8;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 1s ease;
+}
+.navbar .login-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.navbar .login-btn:active{
+    scale: 0.95;
+}
+.navbar .toggle-btn{
+    color: #eabbd8;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+.logo img{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    right: 5%;
+    top: 8%;
+    mix-blend-mode: multiply;
+}
+/*Dropdown menu*/
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 160px;
+    width: 300px;
+    height: 0;
+    background: rgba(34, 33, 33, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;  
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+}
+.dropdown-menu.open{
+    height: 300px;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-shadow: 0 0 1px black;
+}
+.dropdown-menu a:hover{
+    text-decoration: underline;
+    background-color: #0a9c81;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    transition: 1s ease;
+}
+.dropdown-menu .login-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0a9c81;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.dropdown-menu .login-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.dropdown-menu .login-btn:active{
+    scale: 0.95;
+}
+.dropdown-menu li{
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*container*/
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+.container .products-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+}
+
+.container .products-container .product{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .products-container .product:hover{
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+.container .products-container .product img{
+   height: 80%;
+   width: 80%;
+}
+
+.container .products-container .product:hover img{
+   transform: scale(.9);
+}
+
+.container .products-container .product h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#444;
+}
+
+.container .products-container .product:hover h3{
+   color:#0a9c81;
+}
+
+.products-preview{
+   position: fixed;
+   top:0; left:0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.products-preview .preview{
+   display: none;
+   padding:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin:2rem;
+   width: 80rem;
+}
+
+.products-preview .preview.active{
+   display: inline-block;
+}
+
+
+
+.products-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+.products-preview .preview h3{
+   color:#444;
+   padding:.5rem 0;
+   font-size: 2rem;
+}
+
+
+.products-preview .preview .text{
+   padding:1rem 0;
+   font-size: 1rem;
+   color:#777;
+   line-height: 2rem;
+   text-align: justify;
+   direction: rtl;
+}
+.text .source{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 3%;
+}
+.text .sources{
+    direction: ltr;
+    margin-top: 3%;
+}
+
+/*responsive design for mobile*/
+@media(max-width: 481px){
+    /*navbar*/
+    .main-header .navbar{
+        position: relative;
+        top: 0%;
+    }
+    .logo img{
+        position: absolute;
+        right: 15%;
+        top: 60%;
+        width: 50%;
+        height: 100%;
+    }
+    .social_icons{
+        display: flex;
+        gap: 10px;
+    }
+    .social_icons img{
+        width: 20px;
+        height: 20px;
+    }
+    .navbar .links,
+    .navbar .login-btn{
+        display: none
+    }
+    /*Dropdown menu*/
+    .navbar .toggle-btn{
+        display: block;
+        position: relative;
+        top:  50px;
+        left:  40px;
+    }
+    .dropdown-menu{
+        display: block;
+        z-index: 4;
+        margin-right: -5%;
+        margin-top: 8%;
+    }
+    /*container*/
+    .products-container{
+        display: grid;
+        justify-content: center;
+        position: absolute;
+        left: 10%;
+        width: 100%;
+    }
+    .container .products-container .product{
+        width: 80%;
+        height: 100%;
+    }
+    .container .products-container .product h3{
+        font-size: 1rem;
+    }
+    .products-preview{
+        width: 90%;
+    }
+    .products-preview .preview{
+        width: 100%;
+    }
+    .products-preview .preview .fa-times{
+        font-size: 1rem;
+    }
+    .products-preview .preview h3{
+        font-size: 1rem;
+    }
+    .products-preview .preview .text{
+        font-size: 0.5rem;
+        line-height: 1.5rem;
+    }
+    .text .source{
+        font-size: 2rem;
+    }
+    .text .sources{
+        margin-top: 5%;
+    }
+}

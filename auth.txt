@@ -1,0 +1,10 @@
+78.157.51.11
+user: ubuntu
+password: vs1623@2024
+
+/////////////////////////
+
+timedatectl set-timezone Asia/Tehran
+
+sudo apt install nginx
+

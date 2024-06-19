@@ -1,0 +1,301 @@
+/*navbar*/
+.main-header .navbar{
+    width: 70%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 5% auto;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.social_icons{
+    display: flex;
+    gap: 20px;
+    left: -10%;
+}
+.social_icons img{
+    width: 30px;
+    height: 30px;
+}
+.navbar .links{
+    display: flex;
+    gap: 2em;
+    position: relative;
+    left: 30%;
+}
+.navbar .links li{
+    list-style: none;
+}
+.navbar .links li a:hover{
+    text-decoration: none;
+    background-color: #0a9c81;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    transition: 1s ease;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+}
+.navbar .login-btn{
+    background-color: #eabbd8;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 1s ease;
+}
+.navbar .login-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.navbar .login-btn:active{
+    scale: 0.95;
+}
+.navbar .toggle-btn{
+    color: #eabbd8;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+.logo img{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    right: 5%;
+    top: 8%;
+    mix-blend-mode: multiply;
+}
+/*Dropdown menu*/
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 160px;
+    width: 300px;
+    height: 0;
+    background: rgba(34, 33, 33, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;  
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+}
+.dropdown-menu.open{
+    height: 300px;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-shadow: 0 0 1px black;
+}
+.dropdown-menu a:hover{
+    text-decoration: underline;
+    background-color: #0a9c81;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    transition: 1s ease;
+}
+.dropdown-menu .login-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0a9c81;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.dropdown-menu .login-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.dropdown-menu .login-btn:active{
+    scale: 0.95;
+}
+.dropdown-menu li{
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Result*/
+.result{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    gap: 50px;
+}
+.title1{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+.images .box{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    gap: 10px;
+}
+.images .title2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 1px black;
+}
+.box .image1{
+    width: 300px;
+    height: 300px;
+}
+.image1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: .5s linear;
+    cursor: pointer;
+}
+.image1:hover img{
+    transform: scale(1.1);
+}
+/*popup image*/
+.result .popup_img{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0,0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+.popup_img span{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+}
+.popup_img img{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 50%;
+    height: 70%;
+}
+/*responsive design for mobile*/
+@media(max-width: 768px){
+    /*navbar*/
+    .main-header .navbar{
+        position: relative;
+        top: 0%;
+    }
+    .logo img{
+        position: absolute;
+        right: 15%;
+        top: 60%;
+        width: 50%;
+        height: 100%;
+    }
+    .login_media{
+        height: 50px;
+        position: relative;
+        top: 60px;
+    }
+    .social_icons{
+        display: flex;
+        gap: 10px;
+    }
+    .social_icons img{
+        width: 20px;
+        height: 20px;
+    }
+    .navbar .links,
+    .navbar .login-btn{
+        display: none
+    }
+    /*Dropdown menu*/
+    .navbar .toggle-btn{
+        display: block;
+        position: relative;
+        top:  50px;
+        left:  40px;
+    }
+    .dropdown-menu{
+        display: block;
+        z-index: 4;
+        margin-right: -5%;
+        margin-top: 8%;
+    }
+    /*Result*/
+    .result{
+        display: grid;
+        position: relative;
+        top: 100px;
+        width: 100%;
+    }
+    .title1{
+        font-size: 10px;
+        width: 90%;
+        text-shadow: 0px 0px 1px black;
+    }
+    .images{
+        display: grid;
+        position: relative;
+        width: 90%;
+    }
+    .images .box{
+        display: grid;
+        position: relative;
+        width: 90%;
+        left: 10%;
+    }
+    .image1 img{
+        width: 250px;
+        height: 250px;
+    }
+    .box .title2{
+        position: absolute;
+        top: 90%;
+        left: 40%;
+    }
+    /*popup image*/
+    .popup_img img{
+        width: 90%;
+        height: 50%;
+    }
+    .popup_img span{
+        position: absolute;
+        top: 20%;
+    }
+}
