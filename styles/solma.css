@@ -1218,7 +1218,7 @@ a{
         position: relative;
         top: 1250px;
         width: 100%;
-        height: 900px;
+        height: 1200px;
     }
     .adress{
         width: 90%;
@@ -1242,7 +1242,7 @@ a{
     }
     .map{
         position: relative;
-        top: 100px;
+        top: 200px;
         right: 45%;
     }
     .map p{
@@ -1264,7 +1264,7 @@ a{
     }
     .footer .rights{
         position: relative;
-        top: 70px;
+        top: 20px;
         right: 10px;
     }
 }
