@@ -1,6 +1,9 @@
 a{
     text-decoration: none;
 }
+body{
+    overflow-x: hidden;
+}
 /*navbar*/
 .main-header .navbar{
     width: 70%;
@@ -30,10 +33,15 @@ a{
 }
 .navbar .links{
     display: flex;
-    gap: 2em;
+    gap: 3em;
 }
 .navbar .links li{
     list-style: none;
+}
+.navbar .links .on-bar{
+    background-color: #0a9c81;
+    padding: 5px 20px;
+    border-radius: 20px;
 }
 .navbar .links li a:hover{
     background-color: #0a9c81;
@@ -97,7 +105,7 @@ a{
     transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
 }
 .dropdown-menu.open{
-    height: 300px;
+    height: 350px;
 }
 .dropdown-menu a{
     color: white;
@@ -167,14 +175,13 @@ a{
     position: absolute;
     margin-top: -5%;
     left: 5%;
-    top: 70%;
+    top: 60%;
     box-sizing: border-box;
     color: black;
     font-size: 25px;
     font-weight: 900;
     text-shadow: 1px 1px 10px white;
     text-align: center;
-    backdrop-filter: blur(5px);
     border-radius: 10px;
 }
 .slider .list .item .content .type{
@@ -517,6 +524,10 @@ a{
     gap: 10%;
     margin-top: 10%;
 }
+.container.second2{
+    position: relative;
+    top: -5%;
+}
 .container .box{
     display: grid;
     width: 30%;
@@ -824,14 +835,14 @@ a{
 }
 .adress_order p{
     position: relative;
-    right: 20px;
+    right: -5%;
 }
 .social_media{
     display: grid;
     width: 100px;
     position: relative;
-    right: -10%;
-    margin-top: 5%;
+    right: -23%;
+    top: 20%;
     gap: 5px;
 }
 .social_media .title5{
@@ -873,17 +884,16 @@ a{
 .time{
     font-size: 14px;
     font-weight: 900;
-    margin-top: 5%;
-    margin-left: -15%;
     width: 100%;
     position: relative;
+    top: 150%;
     right: -25%;
 }
 .map{
     display: grid;
     gap: 10px;
     position: relative;
-    right: 35%;
+    right: 38%;
     width: 20%;
     height: 20%;
 }
@@ -1063,11 +1073,15 @@ a{
     .introduction{
         width: 90%;
         height: 800px;
-        margin-top: 70%;
+        margin-top: 20%;
     }
     .container{
         display: grid;
         gap: 20px;
+    }
+    .container.second2{
+        position: relative;
+        top: 150%;
     }
     .container .box{
         display: grid;
@@ -1226,7 +1240,7 @@ a{
     .adress_order{
         position: relative;
         width: 100%;
-        left: 5%;
+        left: -5%;
     }
     .social_media{
         position: relative;
@@ -1239,6 +1253,10 @@ a{
     .social_box{
         position: relative;
         left: 0%;
+    }
+    .time{
+        position: relative;
+        left: 10%;
     }
     .map{
         position: relative;

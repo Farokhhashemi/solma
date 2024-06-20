@@ -1,0 +1,345 @@
+a{
+    text-decoration: none;
+}
+/*navbar*/
+header{
+    background-color: #eabbd8;
+    height: 100%;
+    width: 100%;
+}
+.main-header .navbar{
+    width: 100%;
+    height: 160px;
+    max-width: 1200px;
+    margin: 0% auto;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eabbd8;
+    border-radius: 20px;
+}
+.social_icons{
+    display: flex;
+    gap: 20px;
+    left: -10%;
+}
+.social_icons img{
+    width: 30px;
+    height: 30px;
+}
+.navbar .links{
+    display: flex;
+    gap: 3em;
+    position: relative;
+    left: 15%;
+    top: 15%;
+}
+.navbar .links li{
+    list-style: none;
+}
+.navbar .links .on-bar{
+    background-color: #0a9c81;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.navbar .links li a:hover{
+    text-decoration: none;
+    background-color: #0a9c81;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    transition: 1s ease;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+}
+.navbar .login-btn{
+    background-color: #eabbd8;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 1s ease;
+}
+.navbar .login-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.navbar .login-btn:active{
+    scale: 0.95;
+}
+.navbar .toggle-btn{
+    color: #eabbd8;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+.logo img{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    right: 5%;
+    top: 8%;
+    mix-blend-mode: multiply;
+    z-index: 2;
+}
+/*Dropdown menu*/
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 160px;
+    width: 300px;
+    height: 0;
+    background: rgba(34, 33, 33, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;  
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+}
+.dropdown-menu.open{
+    height: 350px;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-shadow: 0 0 1px black;
+}
+.dropdown-menu a:hover{
+    text-decoration: underline;
+    background-color: #0a9c81;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    transition: 1s ease;
+}
+.dropdown-menu .login-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0a9c81;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.dropdown-menu .login-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.dropdown-menu .login-btn:active{
+    scale: 0.95;
+}
+.dropdown-menu li{
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*slider*/
+:root {
+    --primary: #fff;
+    /* --primary: #fff; */
+    --secondary: #0a9c81;
+    /* --bg: #f5f5f5; */
+}
+.slider{
+    background-color: var(--bg);
+    padding: 1rem;
+
+    margin: 7rem auto;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    row-gap: 5rem;
+}
+
+.card {
+    position: relative;
+    left:0;
+
+    min-width: 17rem;
+    height: 23rem;
+    background-color:var(--primary);
+    color: #fff;
+    border-radius: 1rem;
+    border: .1rem solid transparent;
+
+    box-shadow: 0 .2rem .6rem #0003;
+    transition: .5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        min-width: 21rem;
+    }
+}
+
+
+
+.card:hover {
+    border: .1rem solid var(--secondary);
+    transform: scale(1.05);
+}
+
+
+.card-content {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    border-radius: inherit;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+.card-img, 
+.card-title {
+    transform: translateY(4rem);
+    transition: .5s ease-in-out;
+}
+
+.card-img {
+    width: auto;
+    height: 9.5rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition-delay: .1s;
+    color: #333;
+}
+
+.card-body, 
+.card-footer {
+    transform: translateY(8rem);
+    transition: .5s ease-in-out;
+}
+
+.card-body {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #333;
+
+    transition-delay: .2s;
+}
+
+.card:hover .card-img,
+.card:hover .card-title,
+.card:hover .card-body,
+.card:hover .card-footer {
+    transform: translateY(0);
+}
+
+.card-footer {
+    transition-delay: .3s;
+}
+
+
+.card-price {
+    font: bolder 1.5rem sans-serif;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: unset;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.btn-success {
+    background-color: var(--secondary);
+    font-weight: 900;
+}
+/*responsive design for mobile*/
+@media(max-width: 481px){
+    /*navbar*/
+    .main-header .navbar{
+        position: relative;
+        top: 0%;
+    }
+    .logo img{
+        position: absolute;
+        right: 25%;
+        top: 0%;
+        width: 50%;
+        height: 100%;
+    }
+    .login_media{
+        height: 50px;
+        position: relative;
+        top: 60px;
+    }
+    .social_icons{
+        display: flex;
+        gap: 10px;
+    }
+    .social_icons img{
+        width: 20px;
+        height: 20px;
+    }
+    .navbar .links,
+    .navbar .login-btn{
+        display: none
+    }
+    /*Dropdown menu*/
+    .navbar .toggle-btn{
+        display: block;
+        position: relative;
+        top:  50px;
+        right:  10%;
+        color: #0a9c81;
+    }
+    .dropdown-menu{
+        display: block;
+        z-index: 4;
+        margin-right: -5%;
+        margin-top: 8%;
+    }
+    /*slider2*/
+    .slider2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 0fr);
+        justify-items: center;
+        align-self: center;
+        gap: 1%;
+    }
+    .slider2.second3{
+        margin-top: 70%;
+    }
+}
