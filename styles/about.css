@@ -1,38 +1,13 @@
-/*title*/
-.title{
-    position: absolute;
-    top: 1%;
-    right: 72%;
-    width: 300px;
-}
-.title p{
-    font-size: 30px;
-    font-weight: 900;
-    -webkit-box-reflect: below -30px linear-gradient(transparent, #fff);
-    animation: animate1 5s normal infinite;
-}
-@keyframes animate1 {
-    100%{
-        color: #0a9c81;
-        text-shadow: none;
-    }
-    0%{
-        color: #eabbd8;
-        text-shadow: 0 0 10px #0a9c81,
-        0 0 20px #0a9c81,
-        0 0 40px #0a9c81,
-        0 0 80px #0a9c81,
-        0 0 160px #0a9c81;
-    }
-}
-
 /*navbar*/
-
-.main-header .bg-video{
+.main-header .bg-pic{
     position: relative;
     z-index: -1;
-    right: 0;
     width: 100%;
+    height: 100%;
+}
+.bg-pic img{
+    width: 100%;
+    height: 100%;
 }
 .main-header .navbar{
     width: 100%;
@@ -71,7 +46,7 @@
     list-style: none;
 }
 .navbar .links li a{
-    color: #fff;
+    color: #000;
 }
 .navbar .links li a:hover{
     text-decoration: none;
@@ -136,11 +111,6 @@
 @font-face {
     font-family: font1;
     src: url(../fonts/SGKara-SemiBold.ttf);
-}
-.span .solmap{
-    position: relative;
-    left: 5%;
-    font-size: 20px;
 }
 /*Dropdown menu*/
 .dropdown-menu{
@@ -298,25 +268,23 @@
     }
     .text1 .span{
         color: #000;
-        position: relative;
-        width: 100%;
+        position: absolute;
+        width: 80%;
+        left: 10%;
     }
     .span .solma{
         font-size: 25px ;
         position: relative;
-        right: 40%;
+        left: 20%;
     }
-    .span .solmap{
-        font-size: 15px ;
-        position: relative;
-        left: -40%;
-    }
+    
     /*Dropdown menu*/
     .navbar .toggle-btn{
         display: block;
         position: relative;
         top:  50px;
         left:  90%;
+        color: #0a9c81;
     }
     .dropdown-menu{
         display: block;
