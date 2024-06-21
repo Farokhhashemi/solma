@@ -774,10 +774,17 @@ body{
     }
 }
 .enamad{
-    width: 150%;
-    height: 400%;
+    width: 140%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 130%;
+}
+.enamad a{
     position: relative;
-    top: 200%;
+    left: 10%;
 }
 .map{
     display: grid;
