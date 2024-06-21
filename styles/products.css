@@ -286,7 +286,7 @@ header{
     font-weight: 900;
 }
 /*responsive design for mobile*/
-@media(max-width: 481px){
+@media(max-width: 786px){
     /*navbar*/
     .main-header .navbar{
         position: relative;
@@ -327,8 +327,9 @@ header{
     .dropdown-menu{
         display: block;
         z-index: 4;
-        margin-right: -5%;
-        margin-top: 8%;
+        position: absolute;
+        right: 5%;
+        top: 100%;
     }
     /*slider2*/
     .slider2{

@@ -132,7 +132,7 @@
     transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
 }
 .dropdown-menu.open{
-    height: 300px;
+    height: 350px;
 }
 .dropdown-menu a{
     text-decoration: none;
@@ -236,7 +236,7 @@
     box-shadow: none;
 }
 /*responsive design for mobile*/
-@media(max-width: 481px){
+@media(max-width: 786px){
     /*navbar*/
     .main-header .navbar{
         margin-top: 20%;
@@ -299,8 +299,9 @@
     .dropdown-menu{
         display: block;
         z-index: 4;
-        margin-right: -5%;
-        margin-top: -2%;
+        position: absolute;
+        right: 5%;
+        top: 180%;
     }
     /*About us*/
     .content{
