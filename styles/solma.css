@@ -773,18 +773,9 @@ body{
         top: 200%;
     }
 }
-.enamad{
-    width: 140%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.adress .enamad{
     position: absolute;
-    top: 130%;
-}
-.enamad a{
-    position: relative;
-    left: 10%;
+    top: 150%;
 }
 .map{
     display: grid;
