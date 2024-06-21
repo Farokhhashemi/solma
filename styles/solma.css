@@ -1118,6 +1118,10 @@ body{
         position: relative;
         width: 100%;
         left: -5%;
+        @media(max-width: 431px){
+            position: relative;
+            left: -15%;
+        }
     }
     .social_media{
         position: relative;
