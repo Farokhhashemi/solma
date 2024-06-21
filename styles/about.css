@@ -38,9 +38,11 @@
 }
 .navbar .links{
     display: flex;
-    gap: 3em;
-    position: relative;
+    gap: 2%;
+    width: 100%;
+    position: absolute;
     left: 25%;
+    top: -50%;
 }
 .navbar .links li{
     list-style: none;
@@ -96,6 +98,10 @@
 .text1{
     position: absolute;
     top: 25%;
+    @media(max-width: 1290px){
+        position: absolute;
+        right: 40%;
+    }
 }
 .logo img{
     width: 50%;
@@ -106,7 +112,7 @@
 }
 .text1 .span{
     color: #fff;
-    position: relative;
+    position: absolute;
     display: grid;
     left: 70%;
     width: 80%;
@@ -261,6 +267,7 @@
     .text1{
         position: relative;
         top: 10%;
+        left: 0%;
         width: 90%;
     }
     .text1 .logo{
