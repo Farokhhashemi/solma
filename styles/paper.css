@@ -156,116 +156,67 @@ header{
 }
 /*container*/
 .container{
-   max-width: 1200px;
-   margin:0 auto;
-   position: absolute;
-   top: 40%;
-   left: 10%;
-   padding:3rem 2rem;
-}
-.container .products-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap:2rem;
-}
-
-.container .products-container .product{
-   text-align: center;
-   padding:3rem 2rem;
-   background: #fff;
-   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-   outline-offset: -1.5rem;
-   cursor: pointer;
-}
-
-.container .products-container .product:hover{
-   outline: .2rem solid #ccc;
-   outline-offset: 0;
-}
-
-.container .products-container .product img{
-   height: 80%;
-   width: 80%;
-}
-.container .products-container .product .img-p-1{
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    position: absolute;
+    top: 30%;
 }
-.container .products-container .product .img-p-2{
+.box{
+    width: 25%;
+    height: 80%;
+    border: 1px dashed #777;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+.image{
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10%;
 }
-.container .products-container .product:hover img{
-   transform: scale(.9);
+.image img{
+    width: 80%;
+    height: 100%;
 }
-
-.container .products-container .product h3{
-   padding:.5rem 0;
-   font-size: 2rem;
-   color:#444;
-}
-
-.container .products-container .product:hover h3{
-   color:#0a9c81;
-}
-
-.products-preview{
-   position: fixed;
-   top:0; left:0;
-   width: 100%;
-   height: 100%;
-   background: rgba(0,0,0,.2);
-   display: none;
-   align-items: center;
-   justify-content: center;
-   overflow-y: scroll;
-}
-
-.products-preview .preview{
-   display: none;
-   padding:2rem;
-   text-align: center;
-   background: #fff;
-   position: relative;
-   margin:2rem;
-   width: 80rem;
-   
-}
-
-.products-preview .preview.active{
-   display: inline-block;
-}
-
-
-
-.products-preview .preview .fa-times{
-   position: absolute;
-   top:1rem; right:1.5rem;
-   cursor: pointer;
-   color:#444;
-   font-size: 4rem;
-}
-.products-preview .preview h3{
-   color:#444;
-   padding:.5rem 0;
-   font-size: 2rem;
-}
-
-
-.products-preview .preview .text{
-   padding:1rem 0;
-   font-size: 1rem;
-   color:#777;
-   line-height: 2rem;
-   text-align: justify;
-   direction: rtl;
-}
-.text .source{
-    font-size: 2.5rem;
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    font-size: 150%;
     font-weight: 900;
-    margin-top: 3%;
 }
-.text .sources{
-    direction: ltr;
-    margin-top: 3%;
+.more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    font-weight: 900;
+    transition: 1s;
+    color: black;
+}
+.more a:hover{
+    color: white;
+    padding: 2% 5%;
+    background-color: #0a9c81;
+    border-radius: 10%;
 }
 
 /*responsive design for mobile*/
@@ -310,41 +261,15 @@ header{
         top: 100%;
     }
     /*container*/
-    .products-container{
+    .container{
+        width: 100%;
         display: grid;
         justify-content: center;
-        position: absolute;
-        right: -260%;
-        top: -100%;
+        align-items: center;
+        gap: 20%;
+    }
+    .box{
         width: 100%;
-    }
-    .container .products-container .product{
-        width: 80%;
-        height: 100%;
-    }
-    .container .products-container .product h3{
-        font-size: 1rem;
-    }
-    .products-preview{
-        width: 100%;
-    }
-    .products-preview .preview{
-        width: 100%;
-    }
-    .products-preview .preview .fa-times{
-        font-size: 1rem;
-    }
-    .products-preview .preview h3{
-        font-size: 1rem;
-    }
-    .products-preview .preview .text{
-        font-size: 0.5rem;
-        line-height: 1.2rem;
-    }
-    .text .source{
-        font-size: 2rem;
-    }
-    .text .sources{
-        margin-top: 5%;
+        height: 150%;
     }
 }
