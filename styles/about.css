@@ -98,7 +98,10 @@
 }
 .text1{
     position: absolute;
-    top: 25%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
     @media(max-width: 1290px){
         position: absolute;
         right: 40%;
@@ -112,12 +115,14 @@
     left: 60%;
 }
 .text1 .span{
+    width: 100%;
     color: #fff;
-    position: absolute;
-    display: grid;
-    left: 70%;
-    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 40px;
+    left: 35%;
     font-family: font1;
 }
 @font-face {
@@ -282,13 +287,16 @@
     }
     .text1 .logo img{
         position: relative;
+        width: 80%;
+        height: 80%;
         left: 0%;
     }
     .text1 .span{
         color: #000;
         position: absolute;
         width: 80%;
-        left: 20%;
+        left: 0%;
+        top: 90%;
     }
     .span .solma{
         font-size: 25px ;

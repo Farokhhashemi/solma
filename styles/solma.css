@@ -1,6 +1,4 @@
-a{
-    text-decoration: none;
-}
+
 body{
     overflow-x: hidden;
 }
@@ -779,7 +777,7 @@ body{
 }
 .adress .enamad{
     position: absolute;
-    top: 200%;
+    top: 180%;
     right: 50%;
 }
 .map{
