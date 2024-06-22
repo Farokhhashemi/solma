@@ -27,9 +27,11 @@ header{
 }
 .navbar .links{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     gap: 3em;
     position: relative;
-    left: 15%;
     top: 15%;
 }
 .navbar .links li{
