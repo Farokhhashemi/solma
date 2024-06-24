@@ -124,10 +124,22 @@
     font-size: 40px;
     left: 35%;
     font-family: font1;
+    top: -50%;
+}
+.company{
+    position: absolute;
+    left: 58%;
+    top: -80%;
+    font-size: 120%;
+}
+.text1 .solma{
+    font-size: 150%;
+    font-weight: 900;
+    
 }
 @font-face {
     font-family: font1;
-    src: url(../fonts/BBadr.ttf);
+    src: url(../fonts/Vazir-Thin.ttf);
 }
 /*Dropdown menu*/
 .dropdown-menu{
@@ -291,6 +303,12 @@
         height: 80%;
         left: 0%;
     }
+    .company{
+        font-size: 50%;
+        position: absolute;
+        left: 80%;
+        top: -180%;
+    }
     .text1 .span{
         color: #000;
         position: absolute;
@@ -298,6 +316,7 @@
         left: 0%;
         top: 90%;
     }
+    .text1
     .span .solma{
         font-size: 25px ;
         position: relative;
